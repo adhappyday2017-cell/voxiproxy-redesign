@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#050505" />
+    <title>VoxiProxy — защищённое подключение за пару минут</title>
+    <meta name="description" content="VoxiProxy: шифрованное подключение для телефона, компьютера и планшета. Пробный период, тарифы от 25 ₽ в сутки, оплата через СБП, картой или криптовалютой." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="/voxiproxy-redesign/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/voxiproxy-redesign/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/voxiproxy-redesign/apple-touch-icon.png" />
+    <script>
+      /* Картинка первого экрана нужна только на главной — грузим её заранее только там */
+      (function (b) {
+        if (location.pathname !== b && location.pathname !== b + 'index.html') return;
+        [['hero-fox.webp', '(min-width: 761px)'], ['hero-fox-m.webp', '(max-width: 760px)']].forEach(function (x) {
+          var l = document.createElement('link');
+          l.rel = 'preload'; l.as = 'image'; l.href = b + 'img/' + x[0]; l.media = x[1]; l.setAttribute('fetchpriority', 'high');
+          document.head.appendChild(l);
+        });
+      })('/voxiproxy-redesign/');
+    </script>
+    <meta property="og:title" content="VoxiProxy — защищённое подключение за пару минут" />
+    <meta property="og:description" content="Шифрованное подключение для всех ваших устройств. Пробный период, оплата через СБП." />
+    <meta property="og:image" content="/voxiproxy-redesign/img/cta-fox.webp" />
+    <script type="module" crossorigin src="/voxiproxy-redesign/assets/index-h5FI5YpJ.js"></script>
+    <link rel="modulepreload" crossorigin href="/voxiproxy-redesign/assets/useTitle-wzva5zgY.js">
+    <link rel="stylesheet" crossorigin href="/voxiproxy-redesign/assets/index-B0zsWB8N.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Для работы сайта включите JavaScript.</noscript>
+  </body>
+</html>
